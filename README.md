@@ -13,14 +13,23 @@ This project provides a structured DBMS solution that stores and manages all gro
 The proposed Big Basket - Online Grocery Store Database Management System is designed to efficiently manage the following information:
 
 Customer Management
+
 Product Management
+
 Category Management
+
 Supplier Management
+
 Inventory Management
+
 Order Management
+
 Payment Management
+
 Delivery Management
+
 Administrator Management
+
 Sales & Report Management
 The project applies relational database concepts, normalization techniques, and entity relationships to design a structured and efficient database for an e-commerce grocery  store.
 
