@@ -31,6 +31,7 @@ Delivery Management
 Administrator Management
 
 Sales & Report Management
+
 The project applies relational database concepts, normalization techniques, and entity relationships to design a structured and efficient database for an e-commerce grocery  store.
 
 
