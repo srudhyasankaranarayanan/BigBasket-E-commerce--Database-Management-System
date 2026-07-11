@@ -40,6 +40,7 @@ The project applies relational database concepts, normalization techniques, and 
 
 <img width="302" height="567" alt="Screenshot 2026-07-11 072214" src="https://github.com/user-attachments/assets/d4be7fe8-f10c-4e31-8023-3173e4dbbc64" />
 
+<img width="488" height="772" alt="image" src="https://github.com/user-attachments/assets/38bcc763-c9bc-489a-a381-7f5858dd5394" />
 
 
 # Entity Relationships
