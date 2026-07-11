@@ -36,7 +36,6 @@ The project applies relational database concepts, normalization techniques, and 
 
 # Entities and their keys
 
-<img width="510" height="745" alt="image" src="https://github.com/user-attachments/assets/e9089d18-869c-4d4d-ae20-7590967a6d65" />
 
 <img width="532" height="813" alt="image" src="https://github.com/user-attachments/assets/af8921bd-1c8c-4e78-8964-0edcce45f602" />
 
