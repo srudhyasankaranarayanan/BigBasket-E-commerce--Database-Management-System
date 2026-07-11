@@ -34,4 +34,13 @@ Sales & Report Management
 
 The project applies relational database concepts, normalization techniques, and entity relationships to design a structured and efficient database for an e-commerce grocery  store.
 
+# Entities and their keys
+
+<img width="277" height="668" alt="Screenshot 2026-07-11 072117" src="https://github.com/user-attachments/assets/42e0471a-5a70-4d26-a05f-0e080fcf75e1" />
+<img width="302" height="567" alt="Screenshot 2026-07-11 072214" src="https://github.com/user-attachments/assets/d4be7fe8-f10c-4e31-8023-3173e4dbbc64" />
+
+# Entity Relationships
+<img width="295" height="537" alt="Screenshot 2026-07-11 072234" src="https://github.com/user-attachments/assets/3ce35bce-e543-4cee-8b2c-3755dba04b5c" />
+
+
 
