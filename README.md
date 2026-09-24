@@ -36,14 +36,21 @@ The project applies relational database concepts, normalization techniques, and 
 
 ## Entities and their keys
 
-<img width="518" height="371" alt="image" src="https://github.com/user-attachments/assets/526e5d69-7f07-48ba-84fd-d0dc03bceeb0" />
+<img width="365" height="418" alt="image" src="https://github.com/user-attachments/assets/3ff6a190-b1fc-4b81-ae60-c66d9d0f00ae" />
 
-<img width="532" height="813" alt="image" src="https://github.com/user-attachments/assets/af8921bd-1c8c-4e78-8964-0edcce45f602" />
+<img width="442" height="513" alt="image" src="https://github.com/user-attachments/assets/e492372f-3bd8-4074-a228-c347ef951760" />
 
-<img width="511" height="700" alt="image" src="https://github.com/user-attachments/assets/22108b31-afb1-46bf-a027-611e20b6472c" />
+<img width="506" height="521" alt="image" src="https://github.com/user-attachments/assets/dc76f9d4-a8a9-412c-89fd-56afb770827a" />
 
-<img width="488" height="772" alt="image" src="https://github.com/user-attachments/assets/38bcc763-c9bc-489a-a381-7f5858dd5394" />
+<img width="439" height="513" alt="image" src="https://github.com/user-attachments/assets/a6329b9b-14e9-4120-9bbf-8c77371e7625" />
 
+<img width="498" height="559" alt="image" src="https://github.com/user-attachments/assets/03c95eb8-ade3-4b73-bfa5-f1df36106799" />
+
+<img width="467" height="552" alt="image" src="https://github.com/user-attachments/assets/b28ee816-e3fd-41c1-ac5a-f2a2a373e778" />
+
+<img width="498" height="542" alt="image" src="https://github.com/user-attachments/assets/21dd72a7-206b-40af-af74-44423c5f639b" />
+
+<img width="418" height="215" alt="image" src="https://github.com/user-attachments/assets/5e2c5492-d4d5-4b15-a3ac-20bad9f8aaef" />
 
 ## Entity Relationships
 
