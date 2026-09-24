@@ -1,0 +1,100 @@
+CREATE TABLE Order_Details (
+    Order_Detail_ID NUMBER PRIMARY KEY,
+    Order_ID NUMBER NOT NULL,
+    Product_ID NUMBER NOT NULL,
+    Quantity NUMBER NOT NULL,
+    Price NUMBER(10,2) NOT NULL,
+    Sub_total NUMBER(10,2),
+    FOREIGN KEY (Order_ID) REFERENCES Orders(Order_ID),
+    FOREIGN KEY (Product_ID) REFERENCES Product(Product_ID)
+);
+Table created.
+
+INSERT INTO Order_Details
+VALUES (1, 1001, 101, 1, 70000, 70000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (2, 1002, 104, 1, 5000, 5000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (3, 1003, 102, 1, 45000, 45000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (4, 1004, 103, 2, 9000, 18000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (5, 1005, 106, 1, 12500, 12500);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (6, 1006, 107, 2, 16000, 32000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (7, 1007, 108, 1, 8500, 8500);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (8, 1008, 105, 2, 11000, 22000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (9, 1009, 109, 1, 15000, 15000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (10, 1010, 110, 2, 14000, 28000);
+1 row created.
+
+INSERT INTO Order_Details
+VALUES (11, 1001, 104, 2, 5250, 10500);
+1 row created.
+
+Select * from Order_Details;
+
+ORDER_DETAIL_ID   ORDER_ID PRODUCT_ID   QUANTITY      PRICE  SUB_TOTAL
+--------------- ---------- ---------- ---------- ---------- ----------
+        1       1001        101          1      70000      70000
+        2       1002        104          1       5000       5000
+        3       1003        102          1      45000      45000
+        4       1004        103          2       9000      18000
+        5       1005        106          1      12500      12500
+        6       1006        107          2      16000      32000
+        7       1007        108          1       8500       8500
+        8       1008        105          2       11000      22000
+        9       1009        109          1      15000      15000
+        10       1010        110          2      14000      28000
+        11       1001        104          2       5250      10500
+
+11 rows selected.
+
+UPDATE Order_Details
+SET Quantity = 2
+WHERE Order_Detail_ID = 1;
+1 row updated.
+
+Update Order_Details
+SET price=price+100
+Where Order_Detail_ID=3;
+1 row updated.
+
+Update Order_Details
+SET Quantity=2
+Where Order_Detail_ID=10;
+1 row updated.
+
+Select *
+from Order_Details
+Where Order_Detail_ID in(1,3,10);
+
+ORDER_DETAIL_ID   ORDER_ID PRODUCT_ID   QUANTITY      PRICE  SUB_TOTAL
+--------------- ---------- ---------- ---------- ---------- ----------
+              1       1001        101          2      70000      70000
+              3       1003        102          1      45100      45000
+             10       1010        110          2      14000      28000
+commit;
+Commit Completed.
