@@ -1,4 +1,4 @@
-## Big Basket-E-Commerce-Database Management System
+<img width="685" height="607" alt="image" src="https://github.com/user-attachments/assets/d8c24760-e54d-46bf-8087-d803b4c9eb56" />## Big Basket-E-Commerce-Database Management System
 
 ## Overview
 The Big Basket - E-Commerce  Database Management System is a DBMS project designed to efficiently manage the operations of an online grocery platform. The system provides a centralized database for handling customer information, grocery products, categories, suppliers, inventory, orders, payments, and deliveries.
@@ -28,49 +28,39 @@ Payment Management
 
 Delivery Management
 
-Administrator Management
-
 Sales & Report Management
 
 The project applies relational database concepts, normalization techniques, and entity relationships to design a structured and efficient database for an e-commerce grocery  store.
 
 ## Entities and their keys
-
-<img width="365" height="418" alt="image" src="https://github.com/user-attachments/assets/3ff6a190-b1fc-4b81-ae60-c66d9d0f00ae" />
-
-<img width="442" height="513" alt="image" src="https://github.com/user-attachments/assets/e492372f-3bd8-4074-a228-c347ef951760" />
-
-<img width="506" height="521" alt="image" src="https://github.com/user-attachments/assets/dc76f9d4-a8a9-412c-89fd-56afb770827a" />
-
-<img width="439" height="513" alt="image" src="https://github.com/user-attachments/assets/a6329b9b-14e9-4120-9bbf-8c77371e7625" />
-
-<img width="498" height="559" alt="image" src="https://github.com/user-attachments/assets/03c95eb8-ade3-4b73-bfa5-f1df36106799" />
-
-<img width="467" height="552" alt="image" src="https://github.com/user-attachments/assets/b28ee816-e3fd-41c1-ac5a-f2a2a373e778" />
-
-<img width="498" height="542" alt="image" src="https://github.com/user-attachments/assets/21dd72a7-206b-40af-af74-44423c5f639b" />
-
-<img width="418" height="215" alt="image" src="https://github.com/user-attachments/assets/5e2c5492-d4d5-4b15-a3ac-20bad9f8aaef" />
+<img width="671" height="535" alt="image" src="https://github.com/user-attachments/assets/3865f78c-1ed5-449d-8168-cd2d4f6a4139" />
+<img width="661" height="642" alt="image" src="https://github.com/user-attachments/assets/9d86914a-882d-4a04-ab2d-acedc2a7a329" />
+<img width="659" height="335" alt="image" src="https://github.com/user-attachments/assets/f1dbf175-dd32-4bf4-9427-02dbee59c93a" />
+<img width="636" height="391" alt="image" src="https://github.com/user-attachments/assets/031f4e67-06eb-4754-9f95-3a73b9ff19ce" />
+<img width="685" height="607" alt="image" src="https://github.com/user-attachments/assets/15161345-f9a1-490e-8e98-4832eb77e0d3" />
+<img width="570" height="664" alt="image" src="https://github.com/user-attachments/assets/2b653a68-2b5e-4ed6-a500-7eaeb30a6361" />
 
 ## Entity Relationships
 
-<img width="517" height="523" alt="Screenshot 2026-07-11 072643" src="https://github.com/user-attachments/assets/f4cdf8ad-c788-4816-aaf2-60a3151bbb5a" />
+<img width="597" height="475" alt="image" src="https://github.com/user-attachments/assets/781d0982-50e8-4061-b792-8b5819ea06c3" />
 
 ## ER diagram 
 
-<img width="365" height="414" alt="image" src="https://github.com/user-attachments/assets/30dfcfbf-892c-4ea9-a10d-2ab46a195337" />
-
-<img width="2000" height="2828" alt="image" src="https://github.com/user-attachments/assets/82c7d33f-5f50-4cc6-9b58-fbfe53659830" />
-
-<img width="2000" height="2828" alt="image" src="https://github.com/user-attachments/assets/c8901c94-be9e-4f1b-89de-9f9566b602e4" />
-
-<img width="2000" height="2828" alt="image" src="https://github.com/user-attachments/assets/5cd337bf-0f95-4dc1-918b-d7f0f1124eca" />
+<img width="374" height="465" alt="image" src="https://github.com/user-attachments/assets/90734633-ea85-4067-9feb-026d7d286129" />
+<img width="484" height="522" alt="image" src="https://github.com/user-attachments/assets/9bd889f3-1af4-43bb-8dc2-31b39d942056" />
+<img width="449" height="264" alt="image" src="https://github.com/user-attachments/assets/54ebf69d-7e47-4722-b24c-5cc703631765" />
+<img width="482" height="501" alt="image" src="https://github.com/user-attachments/assets/ff6f8542-6c59-46c4-9cb7-fca05faa2463" />
+<img width="475" height="380" alt="image" src="https://github.com/user-attachments/assets/7b79370d-ec27-429f-be43-edce1571c56e" />
+<img width="574" height="570" alt="image" src="https://github.com/user-attachments/assets/1fff25da-8f78-4ffd-bf14-41680d287422" />
+<img width="458" height="356" alt="image" src="https://github.com/user-attachments/assets/7892ee8f-b3ac-423c-b8d7-9653c8e2d9f2" />
+<img width="462" height="279" alt="image" src="https://github.com/user-attachments/assets/0d4ddf54-9988-4fb7-ab33-d1c662632e23" />
 
 ## Relationship Diagram
 
-<img width="2000" height="2828" alt="image" src="https://github.com/user-attachments/assets/bdf80ec4-62be-4f73-893e-0e341ad02ee9" />
+<img width="940" height="1065" alt="image" src="https://github.com/user-attachments/assets/380f2333-75dc-4b8d-9062-b29f006deaa1" />
 
 ## Overall ER Diagram
 
-<img width="2000" height="2828" alt="image" src="https://github.com/user-attachments/assets/d773c15f-af90-458f-8b42-d441067ff5ed" />
+<img width="956" height="638" alt="image" src="https://github.com/user-attachments/assets/04bac4c9-14e5-45d1-a858-0c05144be28c" />
+
 
