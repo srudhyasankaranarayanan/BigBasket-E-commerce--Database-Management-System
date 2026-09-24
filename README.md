@@ -1,4 +1,4 @@
-<img width="685" height="607" alt="image" src="https://github.com/user-attachments/assets/d8c24760-e54d-46bf-8087-d803b4c9eb56" />## Big Basket-E-Commerce-Database Management System
+## Big Basket-E-Commerce-Database Management System
 
 ## Overview
 The Big Basket - E-Commerce  Database Management System is a DBMS project designed to efficiently manage the operations of an online grocery platform. The system provides a centralized database for handling customer information, grocery products, categories, suppliers, inventory, orders, payments, and deliveries.
