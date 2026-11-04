@@ -1,0 +1,386 @@
+Select Count(*)as Total_Orders
+from Orders;
+
+TOTAL_ORDERS
+------------
+          10
+
+Select Sum(Total_Amount) as Total_Sales
+from Orders;
+
+TOTAL_SALES
+-----------
+      39250
+
+Select Avg(Total_Amount) as Average_Sales
+from Orders;
+
+AVERAGE_SALES
+-------------
+         3925
+
+Select min(Total_Amount) as Minimum_Sales
+from Orders;  
+
+MINIMUM_SALES
+-------------
+          500
+
+Select max(Total_Amount) as Maximum_Sales
+from Orders;
+
+MAXIMUM_SALES
+-------------
+        28000
+
+Select Count(Order_ID) as Total_Orders, Sum(Total_Amount) as Total_Sales, Avg(Total_Amount) as Average_Sales, Min(Total_Amount) as Minimum_Sales,
+Max(Total_Amount) as Maximum_Sales
+from Orders;
+
+TOTAL_ORDERS TOTAL_SALES AVERAGE_SALES MINIMUM_SALES MAXIMUM_SALES
+------------ ----------- ------------- ------------- -------------
+          10       39250          3925           500         28000
+
+SELECT
+    c.Customer_ID,
+    c.Customer_Name,
+    SUM(o.Total_Amount) AS Total_Purchase
+FROM Customer c
+JOIN Orders o
+    ON c.Customer_ID = o.Customer_ID
+WHERE o.Order_Status <> 'Cancelled'
+GROUP BY
+    c.Customer_ID,
+    c.Customer_Name
+ORDER BY Total_Purchase DESC;
+
+CUSTOMER_ID CUSTOMER_NAME                                      TOTAL_PURCHASE
+----------- -------------------------------------------------- --------------
+        109 Rohan Gupta                                              28000
+        101 Arun Kumar                                                3150
+        107 Karan Mehta                                               2500
+        103 Rahul Singh                                               1800
+        102 Priya Sharma                                              1250
+        105 Vikram Patel                                               850
+
+6 rows selected.
+
+Select
+    c.Customer_ID,
+    c.Customer_Name,
+    COUNT(o.Order_ID) AS Total_Orders,
+    SUM(o.Total_Amount) AS Total_Purchase
+from Customer c
+join Orders o
+    on c.Customer_ID = o.Customer_ID
+Group by
+    c.Customer_ID,
+    c.Customer_Name
+Order by Total_Purchase DESC;
+
+CUSTOMER_ID CUSTOMER_NAME                                      TOTAL_ORDERS
+----------- -------------------------------------------------- ------------
+TOTAL_PURCHASE
+--------------
+        109 Rohan Gupta                                                1
+         28000
+
+        101 Arun Kumar                                                 3
+          3150
+
+        107 Karan Mehta                                                1
+          2500
+
+
+CUSTOMER_ID CUSTOMER_NAME                                      TOTAL_ORDERS
+----------- -------------------------------------------------- ------------
+TOTAL_PURCHASE
+--------------
+        103 Rahul Singh                                                1
+          1800
+
+        102 Priya Sharma                                               1
+          1250
+
+        106 Anjali Das                                                 1
+          1200
+
+
+CUSTOMER_ID CUSTOMER_NAME                                      TOTAL_ORDERS
+----------- -------------------------------------------------- ------------
+TOTAL_PURCHASE
+--------------
+        105 Vikram Patel                                               1
+           850
+
+        104 Sneha Reddy                                                1
+           500
+
+
+8 rows selected.
+
+Select
+p.Product_ID,
+p.Product_Name,
+Sum(od.Quantity) as Total_Quantity_Sold
+from Product p
+join Order_Details od
+on p.Product_ID = od.Product_ID 
+Group by
+p.product_ID,
+p.Product_Name
+Order by Total_Quantity_Sold DESC;
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD
+-------------------
+       104 Keyboard
+                  3
+
+       103 Tablet
+                  2
+
+       101 Laptop
+                  2
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD
+-------------------
+       105 Mouse
+                  2
+
+       107 Printer
+                  2
+
+       110 Headphones
+                  2
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD
+-------------------
+       109 Webcam
+                  1
+
+       106 Monitor
+                  1
+
+       108 Speaker
+                  1
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD
+-------------------
+       102 Smartphone
+                  1
+
+
+10 rows selected.
+
+Select
+p.Product_ID,
+p.Product_Name,
+Sum(od.Quantity) as Total_Quantity_Sold,
+Sum(od.Sub_total) as Total_Sales
+from Product p
+join Order_Details od
+on p.Product_ID = od.Product_ID
+Group by
+p.Product_ID,
+p.Product_Name
+Order by Total_Sales DESC;
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD TOTAL_SALES
+------------------- -----------
+       101 Laptop
+                  2       70000
+
+       102 Smartphone
+                  1       45000
+
+       107 Printer
+                  2       32000
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD TOTAL_SALES
+------------------- -----------
+       110 Headphones
+                  2       28000
+
+       105 Mouse
+                  2       22000
+
+       103 Tablet
+                  2       18000
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD TOTAL_SALES
+------------------- -----------
+       104 Keyboard
+                  3       15500
+
+       109 Webcam
+                  1       15000
+
+       106 Monitor
+                  1       12500
+
+
+PRODUCT_ID PRODUCT_NAME
+---------- --------------------------------------------------
+TOTAL_QUANTITY_SOLD TOTAL_SALES
+------------------- -----------
+       108 Speaker
+                  1        8500
+
+
+10 rows selected.
+
+Select
+c.Category_ID,
+c.Category_Name,
+Sum(od.Quantity) as Total_Quantity_Sold,
+Sum(od.Sub_total) as Total_Sales
+from Category c
+join Product p
+on c.Category_ID = p.Category_ID
+join Order_Details od
+on p.Product_ID = od.Product_ID
+Group by
+c.Category_ID,
+c.Category_Name
+Order by Total_Sales DESC;
+
+CATEGORY_ID CATEGORY_NAME                  TOTAL_QUANTITY_SOLD TOTAL_SALES
+----------- ------------------------------ ------------------- -----------
+          1 Electronics                                     17      266500
+
+
+Select
+c.Customer_Name,
+o.order_ID,
+p.Product_Name,
+cat.Category_Name,
+od.Quantity,
+od.Sub_total
+from Customer c
+join Orders o
+on c.Customer_ID = o.Customer_ID
+join Order_Details od
+on o.Order_ID = od.Order_ID
+join Product p
+on od.Product_ID = p.Product_ID
+join Category cat
+on p.Category_ID = cat.Category_ID
+Order by o.Order_ID;
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+Arun Kumar                                               1001
+Laptop
+Electronics                             2      70000
+
+Arun Kumar                                               1001
+Keyboard
+Electronics                             2      10500
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+
+Priya Sharma                                             1002
+Keyboard
+Electronics                             1       5000
+
+Rahul Singh                                              1003
+Smartphone
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+Electronics                             1      45000
+
+Arun Kumar                                               1004
+Tablet
+Electronics                             2      18000
+
+Sneha Reddy                                              1005
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+Monitor
+Electronics                             1      12500
+
+Vikram Patel                                             1006
+Printer
+Electronics                             2      32000
+
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+Anjali Das                                               1007
+Speaker
+Electronics                             1       8500
+
+Arun Kumar                                               1008
+Mouse
+Electronics                             2      22000
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+
+Karan Mehta                                              1009
+Webcam
+Electronics                             1      15000
+
+Rohan Gupta                                              1010
+Headphones
+
+CUSTOMER_NAME                                        ORDER_ID
+-------------------------------------------------- ----------
+PRODUCT_NAME
+--------------------------------------------------
+CATEGORY_NAME                    QUANTITY  SUB_TOTAL
+------------------------------ ---------- ----------
+Electronics                             2      28000
+
+
+11 rows selected.
+
+
+commit;
+Commit complete.
